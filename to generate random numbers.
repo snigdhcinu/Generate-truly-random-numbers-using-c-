@@ -1,0 +1,16 @@
+//TO RANDOMLY GENERATE NUMBERS.
+#include<iostream>
+#include<cstdlib>//LIBRARY TO use rand NUMBERS.
+#include<time>//LIBRARY TO access to the no. of second from system's time.
+using namespace std;
+int main()
+{
+    srand(time(0));//insert seed value to our rand fn.,seed value is changed using time operator.
+    for(int i=0;i<100;i++)//if we want to generate 100 random numbers.
+    cout<<rand();
+    /*
+    if you want to generate numbers between a certain limit say 1 to 6,then
+    cout<<(1+rand()%6);
+    */
+}
+// NOTE THAT YOU MIGHT NEED TO EXPLICITLY INCLUDE THE TIME LIBRARY.
